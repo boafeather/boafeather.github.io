@@ -357,6 +357,12 @@ img {
   }
 }
 
+@media (max-width: 450px) {
+  #home .btn-light{
+    display: none; 
+  }
+}
+
 /* @media (max-width: 1400px) {
   .items {
     display: grid;
