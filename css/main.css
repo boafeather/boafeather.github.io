@@ -31,7 +31,7 @@ input[class^="btn-"]:hover {
   color: #f4f4f4; }
 
 .lead {
-  font-size: 1.3rem;
+  font-size: 2.8vh;
   margin-bottom: 2rem; }
 
 .text-center {
@@ -70,7 +70,7 @@ input[class^="btn-"]:hover {
   transition: all 0.5s; }
 
 .section-title {
-  font-size: 2rem;
+  font-size: 3vh;
   display: block;
   padding-bottom: 0.5rem;
   text-align: center;
@@ -132,7 +132,7 @@ img {
   width: 100%;
   padding-top: 1rem;
   padding-left: 1rem; 
-  font-size: 0.89rem;}
+  font-size: 1.5vh;}
   #main-nav ul {
     display: flex; }
   #main-nav li {
@@ -172,16 +172,17 @@ img {
     height: inherit;
     background: rgba(144,220,255, 0.4); }
   #home .header-content {
+    margin-top: 1.5rem;
     text-align: center;
     padding-top: 20%; }
     #home .header-content h1 {
-      font-size: 3.5rem;
+      font-size: 8.5vh;
       line-height: 1.2; }
     #home .header-content span {
       color: #81c6e5; }
     #home .header-content p {
-      padding: 1em 6rem;
-      font-size: 1.6rem;
+      padding: 1em 3em;
+      font-size: 2.8vh;
       line-height: normal; }
 
 #about {
@@ -210,7 +211,7 @@ img {
       #about .about-info .bio p {
         margin-top: 1rem;
         color: #fff;
-        font-size: 1.2rem;
+        font-size: 2.5vh;
         text-align: justify;
         padding: 1.2rem; }
 
@@ -291,7 +292,7 @@ img {
 #main-footer {
   background: #333;
   color: #fff;
-  height: 6rem; }
+  height: 6rem;  }
   #main-footer .contact-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -304,6 +305,10 @@ img {
     height: 6rem;
     align-items: center;
     padding: 0 8rem; }
+    #main-footer .footer-content .stay {
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
     #main-footer .footer-content .social .fab {
       margin-right: 1rem;
       border: 2px #fff solid;
@@ -321,7 +326,7 @@ img {
   height: 72vh}
 
 
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   #about .about-info {
     display:inline-block; 
   }
@@ -331,8 +336,36 @@ img {
   }
 }
 
-@media only screen and (max-width: 1040px) {
+@media (max-width: 1040px) {
   #about .about-info .bio {
     display: none;
   }
 }
+
+@media (max-width: 1380px) {
+  #main-footer .footer-content .social{
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  #main-footer .footer-content .contact-info{
+    display: none;
+  }
+  #main-footer .stay{
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+ 
+  #home .lead {
+    display: none; 
+  }
+}
+
+/* @media (max-width: 1400px) {
+  .items {
+    display: grid;
+    grid-auto-flow: row dense;}
+} */
