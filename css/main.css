@@ -172,6 +172,7 @@ img {
     height: inherit;
     background: rgba(144,220,255, 0.4); }
   #home .header-content {
+    margin-top: 1.5rem;
     text-align: center;
     padding-top: 20%; }
     #home .header-content h1 {
@@ -341,7 +342,7 @@ img {
   }
 }
 
-@media (max-width: 1380px) and (orientation: landscape) {
+@media (max-width: 1380px) {
   #main-footer .footer-content .social{
     display: none;
   }
