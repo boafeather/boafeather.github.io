@@ -341,7 +341,7 @@ img {
   }
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1380px) and (orientation: landscape) {
   #main-footer .footer-content .social{
     display: none;
   }
