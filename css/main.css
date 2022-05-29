@@ -181,7 +181,7 @@ img {
     #home .header-content span {
       color: #81c6e5; }
     #home .header-content p {
-      padding: 1em 6rem;
+      padding: 1em 3em;
       font-size: 2.8vh;
       line-height: normal; }
 
@@ -357,17 +357,12 @@ img {
   }
 }
 
-/* @media (max-width: 500px) {
-  #home .btn-light{
-    margin-top: 0.5rem; 
-  }
+@media (max-width: 500px) {
+ 
   #home .lead {
     display: none; 
   }
- #home .header-content {
-  margin-top: 30vh;
- }
-} */
+}
 
 /* @media (max-width: 1400px) {
   .items {
