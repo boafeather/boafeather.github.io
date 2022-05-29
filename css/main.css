@@ -357,10 +357,16 @@ img {
   }
 }
 
-@media (max-width: 450px) {
-  #home .btn-light{
+@media (max-width: 500px) {
+  /* #home .btn-light{
+    display: none; 
+  } */
+  #home .lead {
     display: none; 
   }
+ #home .header-content {
+  margin-top: 30vh;
+ }
 }
 
 /* @media (max-width: 1400px) {
