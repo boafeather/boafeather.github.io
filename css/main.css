@@ -423,9 +423,9 @@ img {
 #main-footer .footer-content {
   display: flex;
   justify-content: space-between;
-  height: 5rem;
+  height: 4rem;
   align-items: center;
-  padding: 0 8rem;
+  padding: 0 6rem;
 }
 
 #main-footer .footer-content .stay {
@@ -460,9 +460,6 @@ img {
     display: none;
   }
 
-  #main-footer .stay {
-    margin: auto;
-  }
 }
 
 @media (max-width: 950px) {
@@ -474,5 +471,14 @@ img {
 
   .item {
     height: 32vh;
+  }
+}
+
+@media (max-width: 540px) {
+  .hide {
+    display:none ;
+  }
+  #home .header-content {
+    margin-top: 40%;
   }
 }
