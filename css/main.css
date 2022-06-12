@@ -248,8 +248,8 @@ img {
       }
     #about .about-info .bio-image {
       grid-area: 'image';
-      width: 300px;
-      height: 300px;
+      width: 20vw;
+      height: 20vw;
       margin-right: 4rem;
       border-radius: 100%;
       border: 2px solid #f4f4f4; }
@@ -394,7 +394,7 @@ img {
 }
 
 @media (max-width: 1040px) {
-  #about .about-info .bio {
+  #about .about-info .bio-image {
     display: none;
   }
 }
