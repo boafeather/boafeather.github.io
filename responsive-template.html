@@ -333,7 +333,9 @@
     </style>
   </head>
   <body>
-    <div id="bigdiv" style="width:100%; height:100vh; display:none"><input id="inputs" style="width:100%; height:100vh;" type="text" onclick="submitinputs()"></div>
+
+
+    <div id="bigdiv" style="width:100%; height:100vh;"><input id="inputs" style="width:100%; height:100vh;" type="text" onclick="submitinputs()"></div>
 
 <script>
   document.getElementById("inputs")
@@ -378,7 +380,6 @@
                         <p>Hello, my name is <span class="replace">ourName</span>. I am part of an Oxford startup called Birds of a Feather. Our goal is to signpost users to hobbies, clubs and places that they wouldn't normally think about. Using basic information on them in order to send them to places where they are likely to enjoy themselves.</p>
                         <p><span class="replace">theirBusinessName</span> has come to our attention as a great place to recommend people. At this moment in time, we are within our first few months of development and would really appreciate a short conversation with you in order to get your opinion on the idea, and if you like it, to get some information on <span class="replace">theirBusinessName</span> as to send like-minded people your way.
                         </p>
-                        <p>Please note that this service is a completely free.</p>
                         <br/>
                         <p>If possible, would you please be able to send us some dates/ times in the near future that would be suitable to have this conversation?</p>
                         <!-- <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
@@ -403,10 +404,9 @@
                         <p><span class="replace">ourName</span></p>
                       </td>
                     </tr>
-                    <tr>
+                    <tr >
                       <td align="center">
-                        <img style="position: block; height: 100px; width: 100px;" src="https://i.ibb.co/SDgZVXB/logo-3.png" alt="logo-3" border="0">
-                        <!-- <svg style="height:100px; width:100px; top:5px; right:5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJuYW1lIjoiRHJhd2luZy0xNS5za2V0Y2hwYWQiLCJzdXJmYWNlIjp7Im1ldGhvZCI6ImZpbGwiLCJibGVuZCI6Im5vcm1hbCIsImVuYWJsZWQiOnRydWUsIm9wYWNpdHkiOjEsInR5cGUiOiJwYXR0ZXJuIiwicGF0dGVybiI6eyJ0eXBlIjoicGF0dGVybiIsInJlZmxlY3QiOiJuby1yZWZsZWN0IiwicmVwZWF0IjoicmVwZWF0Iiwic21vb3RoaW5nIjpmYWxzZSwic3JjIjoidHJhbnNwYXJlbnRMaWdodCIsInN4IjoxLCJzeSI6MSwieDAiOjAuNSwieDEiOjEsInkwIjowLjUsInkxIjoxfX0sImNsaXBQYXRoIjp7ImVuYWJsZWQiOnRydWUsInN0eWxlIjp7InN0cm9rZVN0eWxlIjoiYmxhY2siLCJsaW5lV2lkdGgiOjF9fSwiZGVzY3JpcHRpb24iOiJNYWRlIHdpdGggU2tldGNocGFkIiwibWV0YWRhdGEiOnt9LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsInBhZ2VzIjpbeyJ3aWR0aCI6NDAwLCJoZWlnaHQiOjQwMH1dLCJ1dWlkIjoiZWE5ODAxNDYtMzBmNS00YzRlLWE5NTItM2Y4MTc0NGQwNTE2In0=" width="400" height="400" viewBox="0 0 400 400">
+                        <svg style="height:100px; width:100px; top:5px; right:5px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJuYW1lIjoiRHJhd2luZy0xNS5za2V0Y2hwYWQiLCJzdXJmYWNlIjp7Im1ldGhvZCI6ImZpbGwiLCJibGVuZCI6Im5vcm1hbCIsImVuYWJsZWQiOnRydWUsIm9wYWNpdHkiOjEsInR5cGUiOiJwYXR0ZXJuIiwicGF0dGVybiI6eyJ0eXBlIjoicGF0dGVybiIsInJlZmxlY3QiOiJuby1yZWZsZWN0IiwicmVwZWF0IjoicmVwZWF0Iiwic21vb3RoaW5nIjpmYWxzZSwic3JjIjoidHJhbnNwYXJlbnRMaWdodCIsInN4IjoxLCJzeSI6MSwieDAiOjAuNSwieDEiOjEsInkwIjowLjUsInkxIjoxfX0sImNsaXBQYXRoIjp7ImVuYWJsZWQiOnRydWUsInN0eWxlIjp7InN0cm9rZVN0eWxlIjoiYmxhY2siLCJsaW5lV2lkdGgiOjF9fSwiZGVzY3JpcHRpb24iOiJNYWRlIHdpdGggU2tldGNocGFkIiwibWV0YWRhdGEiOnt9LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjQwMCwiaGVpZ2h0Ijo0MDAsInBhZ2VzIjpbeyJ3aWR0aCI6NDAwLCJoZWlnaHQiOjQwMH1dLCJ1dWlkIjoiZWE5ODAxNDYtMzBmNS00YzRlLWE5NTItM2Y4MTc0NGQwNTE2In0=" width="400" height="400" viewBox="0 0 400 400">
                           <defs>
                             <linearGradient id="dna_2233477292" gradientUnits="userSpaceOnUse" x1="35.50000000000014" x2="-120.99999999999964" y1="149.25000000000034" y2="246.75000000000026">
                               <stop offset="0" style="stop-color:rgb(255, 255, 255);stop-opacity:1;"/>
@@ -439,7 +439,7 @@
                           <path style="fill: none; stroke: #000000; mix-blend-mode: source-over; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 2;" sketchjs:tool="path" d="M20 0 C11.46 8.54 10 11.25 0 13.44 " transform="matrix(1,0,0,1,206.5625,170)"/>
                           <path style="fill: none; stroke: #000000; mix-blend-mode: source-over; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 2;" sketchjs:tool="path" d="M20.79 248.44 C-18.38 143.75 0.79 64.38 53.29 0 " transform="matrix(1,0,0,1,176.71108405763457,73.125)"/>
                           <path style="fill: none; stroke: #000000; mix-blend-mode: source-over; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 2;" sketchjs:tool="path" d="M43.98 0 C-17.79 86.04 -2.89 180 18.98 242.19 " transform="matrix(1,0,0,1,186.95389003343584,73.4375)"/>
-                          </svg> -->
+                          </svg>
                       </td>
                     </tr>
                   </table>
