@@ -265,6 +265,125 @@ img {
   padding: 1.2rem;
 }
 
+/* Users Page*/
+#about {
+  height: 100vh;
+  background-color: #81c6e5;
+  color: #fff; }
+  #about .bottom-line {
+    background: #f4f4f4; }
+  #about .about-info {
+    display: grid;
+    grid-template-areas: 'image bio bio bio';
+    padding: 1rem 3rem;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center; }
+    #about .about-info .app {
+      grid-area: 'image';
+      width: 300px;
+      height: 300px;
+      margin-right: 4rem;
+      border-radius: 100%;
+      border: 2px solid #f4f4f4;
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 0.5s linear
+    }
+    #about .about-info .app:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    #about .about-info .app .bio-image {
+      margin-right: initial;
+      border: initial;
+    }
+    #about .about-info .reviews {
+      display: grid;
+      grid-area: 'image';
+      overflow: auto;
+      grid-area: 'image';
+      width: 370px;
+      height: 300px;
+    }
+    #about .about-info .reviews::-webkit-scrollbar {
+      width: 3px;
+      height: 4px;
+      background-color: white; /* or add it to the track */
+      display: block;
+    }
+      #about .about-info .reviews .review {
+        height: auto;
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+        font-size: 1rem;
+        border-radius: 5px;;
+      }
+        #about .about-info .reviews .review .star {
+          width: 10px;
+          height: 10px; }
+          
+      #about .about-info .quote-text {
+        font-size: 1rem;
+      }
+      #about .about-info .quoter {
+        font-size: 0.8rem;
+        font-style: italic;
+      }
+    #about .about-info .bio-image {
+      grid-area: 'image';
+      width: 300px;
+      height: 300px;
+      margin-right: 4rem;
+      border-radius: 100%;
+      border: 2px solid #f4f4f4; }
+    #about .about-info .bio {
+      grid-area: 'bio';
+      border-left: 3px solid #f4f4f4;
+      padding: 1rem;
+      background: #73b0cc;
+      border-radius: 0 10px 10px 0 }
+    #about .about-info .bio p {
+      margin-top: 1rem;
+      color: #fff;
+      font-size: 2.5vh;
+      text-align: justify;
+      padding: 1.2rem; }
+    #about .about-info .bio span {
+      margin-top: 1rem;
+      color: #fff;
+      font-size: 2.5vh;
+      text-align: justify;
+      padding: 1.2rem; }
+
+
+/* Updates Page */
+.updates-container {
+  display: flex;
+  background-color: lightblue;
+  height: 75vh;
+  justify-content: space-around;
+  align-items: center;
+}
+  .updates-container .update-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    height: 70vh;
+    width: 40%;
+  }
+    .updates-container .update-sub .content {
+      background-color: white;
+      margin: 10px;
+      height: auto;
+      width: 90%;
+      border-radius: 0 5px 5px 0;
+      border-left: 5px solid black;
+      word-wrap: break-word;
+    }
 
 /* Club/User */
 #projects {
