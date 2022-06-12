@@ -265,6 +265,32 @@ img {
   padding: 1.2rem;
 }
 
+/* Updates Page */
+.updates-container {
+  display: flex;
+  background-color: lightblue;
+  height: 75vh;
+  justify-content: space-around;
+  align-items: center;
+}
+  .updates-container .update-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    height: 70vh;
+    width: 40%;
+  }
+    .updates-container .update-sub .content {
+      background-color: white;
+      margin: 10px;
+      height: auto;
+      width: 90%;
+      border-radius: 0 5px 5px 0;
+      border-left: 5px solid black;
+      word-wrap: break-word;
+    }
 
 /* Club/User */
 #projects {
