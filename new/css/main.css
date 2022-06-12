@@ -268,7 +268,7 @@ img {
 
 /* Club/User */
 #projects {
-  height: 75vh
+  height: 100vh
 }
 
 .items {
@@ -374,7 +374,9 @@ img {
 #main-footer {
   background: #333;
   color: #fff;
-  height: 5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 #main-footer .contact-info {
@@ -436,7 +438,7 @@ img {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   #projects .container .items{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
