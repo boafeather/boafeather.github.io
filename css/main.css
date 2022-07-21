@@ -1,8 +1,9 @@
 /* General Styling */
 .container {
   max-width: 100vw;
-  padding: 0 1.5rem;
-  margin: auto;
+  padding: 0 0rem;
+  margin-left: auto;
+  margin-right: auto;
   overflow: hidden;
 }
 
@@ -266,6 +267,113 @@ img {
 }
 
 /* Users Page*/
+#users {
+  /* to replace about css below*/
+  display: flex;
+  background-color: #81c6e5;
+  align-items: flex-start;
+  height: 150vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+  #users .users-info {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+  }
+    #users .users-info .app {
+      margin: 20px;
+      width: 300px;
+      height: 300px;
+      border-radius: 100%;
+      border: 2px solid #f4f4f4;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: background-color 0.5s linear;
+    }
+    #users .users-info .app:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+      #users .users-info .app .bio-image {
+        width: 300px;
+        height: 300px;
+        margin-right: initial;
+        border: initial;
+      }
+    #users .users-info .bio {
+      border-left: 3px solid #f4f4f4;
+      padding: 1rem;
+      background: #73b0cc;
+      border-radius: 0 10px 10px 0;
+      width: 80%;
+    }
+  #users {
+    display: flex;
+    justify-content: flex-start;
+  }
+    #users .reviews {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      overflow: auto;
+      width: 340px;
+      height: 300px;
+      margin: 10px;
+    }
+      #users .reviews::-webkit-scrollbar {
+        width: 3px;
+        height: 4px;
+        background-color: white; /* or add it to the track */
+        display: block;
+      }
+        #users .reviews .review {
+          height: auto;
+          width: 90%;
+          margin-bottom: 10px;
+          padding: 5px;
+          background-color: rgba(0, 0, 0, 0.3);
+          font-size: 1rem;
+          border-radius: 5px;;
+        }
+          #users .reviews .review .star {
+            width: 10px;
+            height: 10px; }
+            
+        #users .reviews .review .quote-text {
+          font-size: 1rem;
+        }
+        #users .reviews .review .quoter {
+          font-size: 0.8rem;
+          font-style: italic;
+        }
+
+@media only screen and (max-width: 1650px) {
+  #users .reviews-row .reviews {
+    width: 100%;
+  }
+  #users .reviews {
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #users  div {
+    margin-top:20px;
+  }
+  #users .users-info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+}
+
 #about {
   height: 85vh;
   background-color: #81c6e5;
@@ -357,34 +465,50 @@ img {
       text-align: justify;
       padding: 1.2rem; }
 
-
 /* Updates Page */
 .updates-container {
   display: flex;
   background-color: lightblue;
   height: 75vh;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: flex-start;
 }
   .updates-container .update-sub {
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    
-    height: 70vh;
+    height: auto;
     width: 40%;
   }
     .updates-container .update-sub .content {
+      display: flex;
+      justify-content: space-between;
       background-color: white;
       margin: 10px;
+      padding: 2px;
       height: auto;
       width: 90%;
       border-radius: 0 5px 5px 0;
       border-left: 5px solid black;
-      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    .updates-container .update-sub .content .update-text {
+      margin: 0 10px 0 10px;
     }
 
+    @media only screen and (max-width: 542px) {
+      .updates-container {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+        .updates-container .update-sub {
+          width: 90%;
+          margin-left: 1.5rem;
+        }
+    }
 /* Club/User */
 #projects {
   height: 88vh;
